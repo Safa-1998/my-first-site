@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+.logo_text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 26px;
+}
+
+/* NAV BAR */
+.navbar {
+  background-color: #f8f9fa;
+}
+
+.logo {
+  width: 47px;
+}
+
+.navbar .dropdown {
+  padding-left: 20px;
+}
+
+.navbar-nav .nav-link.active {
+  color: rgb(251, 27, 27);
+}
+
+.navbar .nav-item.dropdown>.nav-link:hover,
+.navbar .nav-item.dropdown.show>.nav-link {
+  background-color: #343a40;
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  background-color: rgb(250, 252, 252);
+}
+
+.safa_poisk h4 {
+  padding-left: 10px;
+}
+
+.form-contro {
+  width: 300px;
+}
+
+.navbar-nav .nav-link i {
+  font-size: 30px;
+}
+
+.navbar-nav .nav-link i:hover {
+  color: orange;
+}
+
+.dropdown-menu {
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  background-color: orange;
+  /* твой цвет */
+  color: #fff;
+  /* текст станет белым */
+}
+
+.dropdonw_container li,
+.safa_poisk {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.safa_main_dropdown {
+  margin-top: 6px;
+}
