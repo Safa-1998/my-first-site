@@ -8,7 +8,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/my_css.css">
     <link rel="stylesheet" href="css/fontello.css">
-    
+
 
     <title>Document</title>
 </head>
@@ -27,20 +27,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active logo_text" aria-current="page" href="#">Mebel Mall</a>
+                            <a class="nav-link logo_text" aria-current="page" href="#">Mebel Mall</a>
                         </li>
                         <div class="dropdonw_container d-flex  align-items-center">
                             <li class="nav-item dropdown">
-                                
-                                    <a class="nav-link dropdown-toggle rounded-3 safa_main_dropdown" href="#" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Навигация
-                                    </a>
-                                
+
+                                <a class="nav-link dropdown-toggle rounded-3 safa_main_dropdown" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Навигация
+                                </a>
+
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Категории</a></li>
-                                    <li><a class="dropdown-item" href="#">что-то тут</a></li>
-                                    <li><a class="dropdown-item" href="#">Корзина</a></li>
+                                    <button class="dropdown-item" type="button" data-bs-toggle="offcanvas"
+                                        data-bs-target="#categoriesSidebar" aria-controls="categoriesSidebar">
+                                        Категории
+                                    </button>
+                                    <li><a class="dropdown-item" href="#">Сотрудничество</a></li>
+                                    <li><a class="dropdown-item" href="#">О нас</a></li>
                                     <li>
                                         <hr class="dropdown-divider">
                                     </li>
@@ -59,20 +62,104 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="icon-user"></i></a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="icon-basket"></i></a>
+                        </li>
                     </ul>
 
                     <form class="d-flex safa_poisk" role="search">
                         <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
-                        
+
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
+    <div class="col-lg-7 col-md-7 mx-auto carousel-safa">
+        <div class="row">
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/44mv3djg0q7t5vzznc3oqllimsc2e99q.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/swtacin2qltcy8uz4lu0t2kmvkyidah8.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/nkb18yn47k0yg6czfkma6a826dwqwx1n.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <section></section>
 
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="footer_logo d-flex flex-column">
+                        <div class="d-flex">
+                            <img class="logo" src="img/logo_quarters_sep_256.png" alt="">
+                            <a class="nav-link logo_text" aria-current="page" href="#">Mebel Mall</a>
+                        </div>
+                        <small class="rights-text">все права защищены</small>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                </div>
+                <div class="col-3 d-flex media-links">
+                    <img style="width: 55px; height: 55px; margin-inline: 1em;" src="img/tg.png" alt="">
+                    <img style="width: 55px; height: 55px; margin-inline: 1em;" src="img/WhatsApp_Logo_green.svg.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="categoriesSidebar"
+        aria-labelledby="categoriesSidebarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="categoriesSidebarLabel">Категории</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+        </div>
+        <div class="offcanvas-body">
+            <nav class="list-group list-group-flush">
+                <a class="list-group-item list-group-item-action" href="#">Кухни</a>
+                <a class="list-group-item list-group-item-action" href="#">Спальни</a>
+                <a class="list-group-item list-group-item-action" href="#">Столы и стулья</a>
+                <a class="list-group-item list-group-item-action" href="#">Диваны и кресла</a>
+                <a class="list-group-item list-group-item-action" href="#">Пуфики</a>
+                <a class="list-group-item list-group-item-action" href="#">Техника</a>
+                <a class="list-group-item list-group-item-action" href="#">ТВ-тумбы</a>
+                <a class="list-group-item list-group-item-action" href="#">Кровати</a>
+                <a class="list-group-item list-group-item-action" href="#">Шкафы</a>
+            </nav>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

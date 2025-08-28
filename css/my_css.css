@@ -5,6 +5,7 @@
   font-family: 'Playfair Display', serif;
   font-weight: 900;
   font-size: 26px;
+  color: red;
 }
 
 /* NAV BAR */
@@ -65,13 +66,12 @@
 
 .dropdown-menu .dropdown-item:hover {
   background-color: orange;
-  /* твой цвет */
   color: #fff;
-  /* текст станет белым */
 }
 
 .dropdonw_container li,
-.safa_poisk {
+.safa_poisk,
+body {
   font-family: 'Comfortaa', sans-serif;
   font-weight: 300;
   font-size: 20px;
@@ -79,4 +79,102 @@
 
 .safa_main_dropdown {
   margin-top: 6px;
+}
+
+.dropdown-menu button.dropdown-item {
+  font-size: 20px;
+}
+
+.dropdown-toggle::after {
+  margin-top: 11px;   
+}
+.dropdown-toggle::after {
+  transform: rotate(0deg); 
+  transition: transform 0.2s ease;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(180deg); 
+}
+
+/* body */
+body {
+  background-color: #f8f9fa;
+}
+
+/* carousel */
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(128, 128, 128, 0.4); /* полупрозрачный серый */
+    border-radius: 50%;                        /* круглая форма */
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+.carousel-control-prev {
+  padding-right: 5px;
+  left: 25px;
+}
+
+
+.carousel-control-next {
+    right: 25px;
+    padding-left: 5px; 
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(128, 128, 128, 0.6); /* темнее при наведении */
+}
+
+.carousel-safa {
+    padding-top: 10px;
+}
+
+.carousel-inner {
+    border-radius: 15px;     
+}
+
+.carousel-item img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Offcanvas */
+
+.offcanvas a:hover {
+  background-color: orange;
+  color: #fff;
+}
+
+/* footer */
+
+footer {
+  padding-left: 15px;
+}
+
+.footer_logo .logo_text {
+  margin-left: 22px;
+}
+
+footer small {
+  margin-top: 5px;
+}
+
+.rights-text {
+  color: rgba(136, 136, 136, 0.6);
+}
+
+.media-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
